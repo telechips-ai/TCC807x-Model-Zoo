@@ -15,11 +15,11 @@ The TCC807x features an integrated Neural Processing Unit (NPU).
 With support for up to 8 TOPS, the TCC807x redefines in-car innovation with scalable, integrated solutions tailored for both infotainment and advanced driver assistance systems (ADAS).
 
 ### TCC807x (D5)
-- **Performance:** 8 TOPS  
-- **Target Applications:**  
+- **Performance:** 8 TOPS
+- **Target Applications:**
   - Advanced driver assistance systems (ADAS)
-  - Vision-based applications (multi-camera processing)  
-  - Driver Monitoring System (DMS)  
+  - Vision-based applications (multi-camera processing)
+  - Driver Monitoring System (DMS)
   - Deep learning inference
 
 With an integrated NPU, the TCC807x delivers real-time neural network inference with high efficiency and scalable performance for automotive applications.
@@ -28,7 +28,7 @@ With an integrated NPU, the TCC807x delivers real-time neural network inference 
 
 ## **2. Overview of Model Zoo**
 The following table summarizes the image classification and object detection models supported on TCC807x.
-Each model name links to its dedicated page with performance metrics and deployment instructions.  
+Each model name links to its dedicated page with performance metrics and deployment instructions.
 
 **Note:** The models covered in this document are based on original network architectures or have been minimally modified for compatibility with TCC807x execution. The results shown are not guaranteed for production use, and you are responsible for any further optimization.
 
@@ -47,14 +47,14 @@ Each model name links to its dedicated page with performance metrics and deploym
         <tr>
             <td align="center" colspan="2">EfficientNet-Lite0</td> <!-- Model -->
             <td align="center">224x224x3</td> <!-- Input Size (WxHxC) -->
-            <td align="center">1.49</td> <!-- Inference Time (msec): EVB -->
-            <td align="center">0.725</td> <!-- Accuracy -->
+            <td align="right">1.49</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.725</td> <!-- Accuracy -->
         </tr>
         <tr>
             <td align="center" colspan="2">MobileNet-v2-1.4</td> <!-- Model -->
             <td align="center">224x224x3</td> <!-- Input Size (WxHxC) -->
-            <td align="center">1.16</td> <!-- Inference Time (msec): EVB -->
-            <td align="center">0.712</td> <!-- Accuracy -->
+            <td align="right">1.16</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.712</td> <!-- Accuracy -->
         </tr>
     </tbody>
 <table>
@@ -69,25 +69,64 @@ Each model name links to its dedicated page with performance metrics and deploym
             <th rowspan="2">Inference Time (ms)</th>
             <th rowspan="2">mAP@50</th>
         </tr>
-    </thead> 
+    </thead>
     <tbody>
         <tr>
             <td align="center" colspan="2">SSDlite-MobileNet-v1</td> <!-- Model -->
             <td align="center">300x300x3</td> <!-- Input Size (WxHxC) -->
-            <td align="center">16.58</td> <!-- Inference Time (msec): EVB -->
-            <td align="center">0.341</td>
+            <td align="right">16.58</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.341</td>
         </tr>
         <tr>
-            <td align="center" colspan="2">YOLOv3</td> <!-- Model -->
+            <td align="center" rowspan="2" class="model">YOLOv3</td> <!-- Model -->
+            <td align="center" class="variant">-</td> <!-- Models: Variant -->
             <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
-            <td align="center">15.21</td> <!-- Inference Time (msec): EVB -->
-            <td align="center">0.560</td>
+            <td align="right">15.21</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.560</td>
         </tr>
         <tr>
-            <td align="center" colspan="2">YOLOv3-tiny</td> <!-- Model -->
+            <td align="center" class="variant">tiny</td> <!-- Model -->
             <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
-            <td align="center">2.50</td> <!-- Inference Time (msec): EVB -->
-            <td align="center">0.319</td>
+            <td align="right">2.50</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.319</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">YOLOv4</td> <!-- Model -->
+            <td align="center">608x608x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">41.59</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.252</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+        </tr>
+        <tr>
+            <td align="center" rowspan="4" class="model">YOLOv6</td> <!-- Models -->
+            <td align="center" class="variant">n</td> <!-- Models: Variant -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">39.39</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.342</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+        </tr>
+        <tr>
+            <td align="center" class="variant">s</td> <!-- Models: Variant -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">60.52</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.407</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+        </tr>
+        <tr>
+            <td align="center" class="variant">m</td> <!-- Models: Variant -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">83.51</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.437</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+        </tr>
+        <tr>
+            <td align="center" class="variant">l</td> <!-- Models: Variant -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">1414.80</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.461</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+        </tr>
+        <tr>
+            <td align="center" rowspan="1" class="model">YOLOv8</td> <!-- Models -->
+            <td align="center" class="variant">n</td> <!-- Models: Variant -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">14.57</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.382</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
     </tbody>
 <table>
@@ -103,24 +142,23 @@ git clone git@github.com:telechips-ai/TCC807x-Model-Zoo.git
 </code> </pre>
 
 ### 2. Copy the desired model to the EVB:
-Copy the entire model folder (mobileNetV1_SSD) to the TCC807x EVB.  
-You can either copy the folder as it is or rename it to mobileNetV1_SSD to match the format used in previously released neural network folders, as shown in the following example.  
+Copy the entire model folder (ssdlite_mobilenet_v1) to the TCC807x EVB.
 Each folder contains the necessary output files (.so, .json, and .param).
 <pre> <code>
 scp -r [network_output_folder] root@192.168.0.100:/path/to/target/
 </code> </pre>
-Replace [network_output_folder] with the actual folder (e.g., mobileNetV1_SSD/).  
+Replace [network_output_folder] with the actual folder (e.g., ssdlite_mobilenet_v1/).
 
-### ***Example: TCC807x - mobileNetV1_SSD Folder Structure***
+### ***Example: TCC807x - ssdlite_mobilenet_v1 Folder Structure***
 <pre> <code>
-mobileNetV1_SSD/
+ssdlite_mobilenet_v1/
 ├── mod.so        # Compiled model
 ├── mod.json      # Model graph
-└── mod.param     # Binary file of Quantized weight and bias 
+└── mod.param     # Binary file of Quantized weight and bias
 </code> </pre>
 Then run:
 <pre> <code>
-scp -r mobileNetV1_SSD/ root@192.168.0.100:/home/root/
+scp -r ssdlite_mobilenet_v1/ root@192.168.0.100:/home/root/
 </code> </pre>
 
 ### 3. Run the model using rtvm:
@@ -130,7 +168,7 @@ rtvm --model=[network_output_folder_path] --device=cpu --dump-meta --profile --r
 
 ---
 
-## 4. **Requirment**
+## 4. **Requirement**
 
 * ethos-n-driver-stack: 25.03
 * TVM: 0.18.0

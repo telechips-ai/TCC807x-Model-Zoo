@@ -19,7 +19,7 @@
             <th>INT8</th>
             <th>FP32</th>
             <th>INT8</th>
-            <th>.json(KB)</th>
+            <th>.json (KB)</th>
             <th>.params (KB)</th>
             <th>.so (MB)</th>
             <th>Link</th>
@@ -38,14 +38,14 @@
             <td align="right">0.588</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
             <td align="right">0.560</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
             <td align="center">INT8</td> <!-- Quantization Bit -->
-            <td align="right">29.52</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
-            <td align="right">1.74</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
-            <td align="right">470</td> <!-- Compiled NN Information: Network (.so) (MB) -->
+            <td align="right">29.528</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
+            <td align="right">1.744</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
+            <td align="right">470.603</td> <!-- Compiled NN Information: Network (.so) (MB) -->
             <td align="center"><a href="https://github.com/ultralytics/yolov3">Github<a></td> <!-- References: Link -->
             <td align="center">AGPL-3.0</td>
         </tr>
         <tr>
-            <td align="center" colspan="2"><a href="yolov3-tiny/">YOLOv3-tiny</a></td> <!-- Model -->
+            <td align="center" colspan="2"><a href="yolov3_tiny/">YOLOv3-tiny</a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
@@ -55,9 +55,9 @@
             <td align="right">0.338</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
             <td align="right">0.319</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
             <td align="center">INT8</td> <!-- Quantization Bit -->
-            <td align="right">17.62</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
-            <td align="right">0.25</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
-            <td align="right">63</td> <!-- Compiled NN Information: Network (.so) (MB) -->
+            <td align="right">17.624</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
+            <td align="right">0.256</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
+            <td align="right">63.818</td> <!-- Compiled NN Information: Network (.so) (MB) -->
             <td align="center"><a href="https://github.com/ultralytics/yolov3">Github<a></td> <!-- References: Link -->
             <td align="center">AGPL-3.0</td>
         </tr>

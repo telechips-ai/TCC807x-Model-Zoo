@@ -1,11 +1,11 @@
 # YOLO Series Benchmark on TCC807x
 
-The following table shows benchmark results for YOLOv3 and YOLOv3-tiny object detection models running on the **TCC807x** NPU.  
-YOLO models are widely known for their real-time performance and high accuracy in detecting multiple objects in a single pass over the image.  
+The following table shows benchmark results for various YOLO object detection models running on the **TCC807x** NPU.
+YOLO models are widely known for their real-time performance and high accuracy in detecting multiple objects in a single pass over the image.
 
-Click on the model name to download a tar file containing the model binary for TCC807x.  
+Click on the model name to download a tar file containing the model binary for TCC807x.
 
-**Note:** YOLO stands for You Only Look Once
+**Note:** YOLO stands for You Only Look Once.
 
 ---
 
@@ -15,15 +15,15 @@ Click on the model name to download a tar file containing the model binary for T
 
 | Column                    | Description                                                                 |
 |--------------------------|-----------------------------------------------------------------------------|
-| **Model**                | Name of the object detection model     |
+| **Model**                | Name of the neural network model     |
 | **Framework**            | Deep learning framework used (e.g., PyTorch, TFLite, ONNX)                  |
 | **Dataset**              | Dataset used to benchmark model performance                                                           |
 | **Input Size (WxHxC)**   | Input Size (Width × Height × Channels) of the input image required by the model                            |
-| **Inference Time (ms)**  | Inference time measured on the TCC807x EVB using zero-padded input images.                               |
-| **mAP**             | Mean Average Precision, evaluated on **COCO2017 validation dataset** (5,000 images)                 |
+| **Inference Time (ms)**  | Inference time measured on the TCC807x EVB using zero-padded input images                               |
+| **mAP**             | Mean Average Precision (mAP) is evaluated on the **COCO2017 validation dataset** (5,000 images)                 |
 | **Quantization Bit**     | Bit-depth used for quantization (e.g., INT8)                                |
 | **Compiled Model Files**   | Sizes of the compiled model components: .json, .params, and .so for execution on TCC807x                     |
-| **References**           | Link and license* information for the original repository of the model                         |
+| **References**           | Link and license** information for the original repository of the model                         |
 
 ---
 <table border="1" cellspacing="0" cellpadding="5">
@@ -54,7 +54,7 @@ Click on the model name to download a tar file containing the model binary for T
     </thead>
     <tbody>
         <tr>
-            <td align="center" rowspan="2" class="model"><a href="yolov3/">YOLOv3</a></td> <!-- Model -->
+            <td align="center" rowspan="2" class="model">YOLOv3</a></td> <!-- Model -->
             <td align="center" class="variant"><a href="yolov3/yolov3/">-</a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
@@ -65,14 +65,14 @@ Click on the model name to download a tar file containing the model binary for T
             <td align="right">0.588</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
             <td align="right">0.560</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
             <td align="center">INT8</td> <!-- Quantization Bit -->
-            <td align="right">29.52</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
-            <td align="right">1.74</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
-            <td align="right">470</td> <!-- Compiled NN Information: Network (.so) (MB) -->
+            <td align="right">29.528</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
+            <td align="right">1.744</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
+            <td align="right">470.603</td> <!-- Compiled NN Information: Network (.so) (MB) -->
             <td align="center"><a href="https://github.com/ultralytics/yolov3">Github<a></td> <!-- References: Link -->
             <td align="center">AGPL-3.0</td>
         </tr>
         <tr>
-            <td align="center" class="variant"><a href="yolov3/yolov3-tiny/">tiny</a></td> <!-- Model -->
+            <td align="center" class="variant"><a href="yolov3/yolov3_tiny/">tiny</a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
@@ -82,11 +82,109 @@ Click on the model name to download a tar file containing the model binary for T
             <td align="right">0.338</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
             <td align="right">0.319</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
             <td align="center">INT8</td> <!-- Quantization Bit -->
-            <td align="right">17.62</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
-            <td align="right">0.25</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
-            <td align="right">63</td> <!-- Compiled NN Information: Network (.so) (MB) -->
+            <td align="right">17.624</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
+            <td align="right">0.256</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
+            <td align="right">63.818</td> <!-- Compiled NN Information: Network (.so) (MB) -->
             <td align="center"><a href="https://github.com/ultralytics/yolov3">Github<a></td> <!-- References: Link -->
             <td align="center">AGPL-3.0</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2"><a href="yolov4/yolov4/">YOLOv4</a></td> <!-- Model -->
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">608x608x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">41.59</td>
+            <td align="right">0.327</td>
+            <td align="right">0.167</td>
+            <td align="right">0.476</td>
+            <td align="right">0.252</td>
+            <td align="center">INT8</td>
+            <td align="right">2.363</td>
+            <td align="right">0.032</td>
+            <td align="right">63.506</td>
+            <td align="center"><a href="https://github.com/AlexeyAB/darknet">Github<a></td> <!-- References: Link -->
+            <td align="center">GPL-3.0</td>
+        </tr>
+        <tr>
+            <td align="center" rowspan="4" class="model">YOLOv6</a></td> <!-- Model -->
+            <td align="center" class="variant"><a href="yolov6/yolov6n/">n</a></td> <!-- Models: Variant -->
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">39.39</td>
+            <td align="right">0.277</td>
+            <td align="right">0.215</td>
+            <td align="right">0.389</td>
+            <td align="right">0.342</td>
+            <td align="center">INT8</td>
+            <td align="right">16.348</td>
+            <td align="right">0.14</td>
+            <td align="right">5.033</td>
+            <td align="center" rowspan="4"><a href="https://github.com/meituan/YOLOv6">GitHub<a></td> <!-- References: Link -->
+            <td align="center" rowspan="4">GPL-3.0</td>
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="yolov6/yolov6s/">s</a></td> <!-- Model -->
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">60.52</td>
+            <td align="right">0.328</td>
+            <td align="right">0.246</td>
+            <td align="right">0.446</td>
+            <td align="right">0.407</td>
+            <td align="center">INT8</td>
+            <td align="right">16.302</td>
+            <td align="right">0.14</td>
+            <td align="right">17.468</td>
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="yolov6/yolov6m/">m</a></td> <!-- Model -->
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">83.51</td>
+            <td align="right">0.349</td>
+            <td align="right">0.241</td>
+            <td align="right">0.471</td>
+            <td align="right">0.437</td>
+            <td align="center">INT8</td>
+            <td align="right">16.56</td>
+            <td align="right">0.194</td>
+            <td align="right">32.138</td>
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="yolov6/yolov6l/">l</a></td> <!-- Model -->
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">1414.80</td>
+            <td align="right">0.367</td>
+            <td align="right">0.243</td>
+            <td align="right">0.488</td>
+            <td align="right">0.461</td>
+            <td align="center">INT8</td>
+            <td align="right">208.664</td>
+            <td align="right">2.066</td>
+            <td align="right">62.854</td>
+        </tr>
+        <tr>
+            <td align="center" rowspan="5" class="model">YOLOv8</a></td> <!-- Model -->
+            <td align="center" class="variant"><a href="yolov8/yolov8n/">n</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">14.57</td>
+            <td align="right">0.278</td>
+            <td align="right">0.264</td>
+            <td align="right">0.479</td>
+            <td align="right">0.382</td>
+            <td align="center">INT8</td>
+            <td align="right">1.722</td>
+            <td align="right">0.032</td>
+            <td align="right">3.577</td>
+            <td align="center" rowspan="5"><a href="https://github.com/ultralytics/ultralytics">GitHub<a></td> <!-- References: Link -->
+            <td align="center" rowspan="5">AGPL-3.0</td>
         </tr>
     </tbody>
 </table>
@@ -110,10 +208,10 @@ Click on the model name to download a tar file containing the model binary for T
 
 - - -
 
-### Footnote                
-* All models in this repository are distributed exclusively in TensorFlow Lite® format.  
+### Footnote
+* All models in this repository are distributed exclusively in TensorFlow Lite® format.
 * PyTorch® and ONNX™ are not provided.
-* License\*:
+* License\**:
   - Telechips Inc. is not responsible for any issues, damages, or losses resulting from the use of code downloaded from GitHub repositories provided by Telechips.
   - The performance results of neural networks (such as, mAP or inference time) are not subject to license term and may be used freely.
   - Any output generated by software execution may or may not be subject to license terms, depending on the contract and intended use of the output.
