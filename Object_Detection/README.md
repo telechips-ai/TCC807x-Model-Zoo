@@ -67,13 +67,13 @@ Click on the model name to download a tar file containing the model binary for T
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">15.21</td> <!-- Inference Time(msec): EVB -->
-            <td align="right">0.588</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
-            <td align="right">0.560</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">47.32</td> <!-- Inference Time(msec): EVB -->
+            <td align="right">0.436</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
+            <td align="right">0.426</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
             <td align="center">INT8</td> <!-- Quantization Bit -->
-            <td align="right">29.528</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
-            <td align="right">1.744</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
-            <td align="right">470.603</td> <!-- Compiled NN Information: Network (.so) (MB) -->
+            <td align="right">2.520</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
+            <td align="right">0.032</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
+            <td align="right">56.952</td> <!-- Compiled NN Information: Network (.so) (MB) -->
             <td align="center"><a href="https://github.com/ultralytics/yolov3">Github<a></td> <!-- References: Link -->
         </tr>
         <tr>
@@ -81,13 +81,13 @@ Click on the model name to download a tar file containing the model binary for T
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">2.50</td> <!-- Inference Time(msec): EVB -->
-            <td align="right">0.338</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
-            <td align="right">0.319</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">5.25</td> <!-- Inference Time(msec): EVB -->
+            <td align="right">0.260</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
+            <td align="right">0.215</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
             <td align="center">INT8</td> <!-- Quantization Bit -->
-            <td align="right">17.624</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
-            <td align="right">0.256</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
-            <td align="right">63.818</td> <!-- Compiled NN Information: Network (.so) (MB) -->
+            <td align="right">2.158</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
+            <td align="right">0.032</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
+            <td align="right">7.612</td> <!-- Compiled NN Information: Network (.so) (MB) -->
             <td align="center"><a href="https://github.com/ultralytics/yolov3">Github<a></td> <!-- References: Link -->
         </tr>
         <tr>
@@ -96,11 +96,11 @@ Click on the model name to download a tar file containing the model binary for T
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">608x608x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">41.59</td>
+            <td align="right">47.51</td>
             <td align="right">0.476</td>
-            <td align="right">0.252</td>
+            <td align="right">0.446</td>
             <td align="center">INT8</td>
-            <td align="right">2.363</td>
+            <td align="right">2.435</td>
             <td align="right">0.032</td>
             <td align="right">63.506</td>
             <td align="center"><a href="https://github.com/AlexeyAB/darknet">Github<a></td> <!-- References: Link -->
@@ -111,13 +111,13 @@ Click on the model name to download a tar file containing the model binary for T
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">39.39</td>
-            <td align="right">0.389</td>
-            <td align="right">0.342</td>
+            <td align="right">11.47</td>
+            <td align="right">0.382</td>
+            <td align="right">0.328</td>
             <td align="center">INT8</td>
-            <td align="right">16.348</td>
-            <td align="right">0.14</td>
-            <td align="right">5.033</td>
+            <td align="right">2.459</td>
+            <td align="right">0.032</td>
+            <td align="right">4.806</td>
             <td align="center" rowspan="4"><a href="https://github.com/meituan/YOLOv6">GitHub<a></td> <!-- References: Link -->
         </tr>
         <tr>
@@ -125,39 +125,67 @@ Click on the model name to download a tar file containing the model binary for T
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">60.52</td>
-            <td align="right">0.446</td>
-            <td align="right">0.407</td>
+            <td align="right">14.52</td>
+            <td align="right">0.442</td>
+            <td align="right">0.352</td>
             <td align="center">INT8</td>
-            <td align="right">16.302</td>
-            <td align="right">0.14</td>
-            <td align="right">17.468</td>
+            <td align="right">2.462</td>
+            <td align="right">0.032</td>
+            <td align="right">17.270</td>
         </tr>
         <tr>
             <td align="center" class="variant"><a href="YOLO/yolov6/yolov6m/">m</a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">83.51</td>
-            <td align="right">0.471</td>
-            <td align="right">0.437</td>
+            <td align="right">20.79</td>
+            <td align="right">0.451</td>
+            <td align="right">0.424</td>
             <td align="center">INT8</td>
-            <td align="right">16.56</td>
-            <td align="right">0.194</td>
-            <td align="right">32.138</td>
+            <td align="right">2.459</td>
+            <td align="right">0.032</td>
+            <td align="right">31.828</td>
         </tr>
         <tr>
             <td align="center" class="variant"><a href="YOLO/yolov6/yolov6l/">l</a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">1414.80</td>
-            <td align="right">0.488</td>
-            <td align="right">0.461</td>
+            <td align="right">29.90</td>
+            <td align="right">0.456</td>
+            <td align="right">0.427</td>
             <td align="center">INT8</td>
-            <td align="right">208.664</td>
-            <td align="right">2.066</td>
-            <td align="right">62.854</td>
+            <td align="right">2.458</td>
+            <td align="right">0.032</td>
+            <td align="right">58.312</td>
+        </tr>
+        <tr>
+            <td align="center" rowspan="2" class="model"><a href="YOLO/yolov7/README.md">YOLOv7</a></td> <!-- Model -->
+            <td align="center" class="variant"><a href="YOLO/yolov7/yolov7/">-</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">41.39</td>
+            <td align="right">0.474</td>
+            <td align="right">0.459</td>
+            <td align="center">INT8</td>
+            <td align="right">2.494</td>
+            <td align="right">0.032</td>
+            <td align="right">36.022</td>
+            <td align="center" rowspan="2"><a href="https://github.com/WongKinYiu/yolov7">GitHub<a></td> <!-- References: Link -->
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="YOLO/yolov7/yolov7_tiny/">tiny</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">27.62</td>
+            <td align="right">0.404</td>
+            <td align="right">0.381</td>
+            <td align="center">INT8</td>
+            <td align="right">2.494</td>
+            <td align="right">0.032</td>
+            <td align="right">6.637</td>
         </tr>
         <tr>
             <td align="center" rowspan="5" class="model"><a href="YOLO/yolov8/README.md">YOLOv8</a></td> <!-- Model -->
@@ -165,14 +193,161 @@ Click on the model name to download a tar file containing the model binary for T
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">14.57</td>
-            <td align="right">0.479</td>
-            <td align="right">0.382</td>
+            <td align="right">18.44</td>
+            <td align="right">0.369</td>
+            <td align="right">0.347</td>
             <td align="center">INT8</td>
-            <td align="right">1.722</td>
+            <td align="right">1.758</td>
             <td align="right">0.032</td>
             <td align="right">3.577</td>
             <td align="center" rowspan="5"><a href="https://github.com/ultralytics/ultralytics">GitHub<a></td> <!-- References: Link -->
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="YOLO/yolov8/yolov8s/">s</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">21.73</td>
+            <td align="right">0.417</td>
+            <td align="right">0.391</td>
+            <td align="center">INT8</td>
+            <td align="right">1.813</td>
+            <td align="right">0.032</td>
+            <td align="right">8.321</td>
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="YOLO/yolov8/yolov8m/">m</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">28.00</td>
+            <td align="right">0.455</td>
+            <td align="right">0.435</td>
+            <td align="center">INT8</td>
+            <td align="right">1.813</td>
+            <td align="right">0.032</td>
+            <td align="right">18.237</td>
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="YOLO/yolov8/yolov8l/">l</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">36.92</td>
+            <td align="right">0.478</td>
+            <td align="right">0.450</td>
+            <td align="center">INT8</td>
+            <td align="right">1.812</td>
+            <td align="right">0.032</td>
+            <td align="right">29.775</td>
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="YOLO/yolov8/yolov8x/">x</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">46.21</td>
+            <td align="right">0.481</td>
+            <td align="right">0.456</td>
+            <td align="center">INT8</td>
+            <td align="right">1.813</td>
+            <td align="right">0.032</td>
+            <td align="right">45.213</td>
+        </tr>
+        <tr>
+            <td align="center" rowspan="1" class="model"><a href="YOLO/yolov9/README.md">YOLOv9</a></td> <!-- Model -->
+            <td align="center" class="variant"><a href="YOLO/yolov9/yolov9s/">s</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">32.44</td>
+            <td align="right">0.386</td>
+            <td align="right">0.328</td>
+            <td align="center">INT8</td>
+            <td align="right">2.850</td>
+            <td align="right">0.032</td>
+            <td align="right">8.091</td>
+            <td align="center"><a href="https://github.com/WongKinYiu/yolov9">GitHub<a></td> <!-- References: Link -->
+        </tr>
+        <tr>
+            <td align="center" rowspan="6" class="model"><a href="YOLO/yolox/README.md">YOLOX</a></td> <!-- Model -->
+            <td align="center" class="variant"><a href="YOLO/yolox/yolox_nano/">nano</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">14.28</td>
+            <td align="right">0.282</td>
+            <td align="right">0.059</td>
+            <td align="center">INT8</td>
+            <td align="right">6.668</td>
+            <td align="right">0.032</td>
+            <td align="right">1.409</td>
+            <td align="center" rowspan="6"><a href="https://github.com/Megvii-BaseDetection/YOLOX">GitHub<a></td> <!-- References: Link -->
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="YOLO/yolox/yolox_tiny/">tiny</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">14.87</td>
+            <td align="right">0.336</td>
+            <td align="right">0.305</td>
+            <td align="center">INT8</td>
+            <td align="right">6.667</td>
+            <td align="right">0.032</td>
+            <td align="right">5.702</td>
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="YOLO/yolox/yolox_s/">s</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">33.83</td>
+            <td align="right">0.429</td>
+            <td align="right">0.281</td>
+            <td align="center">INT8</td>
+            <td align="right">6.659</td>
+            <td align="right">0.032</td>
+            <td align="right">9.724</td>
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="YOLO/yolox/yolox_m/">m</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">40.83</td>
+            <td align="right">0.479</td>
+            <td align="right">0.257</td>
+            <td align="center">INT8</td>
+            <td align="right">6.658</td>
+            <td align="right">0.032</td>
+            <td align="right">26.149</td>
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="YOLO/yolox/yolox_l/">l</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">51.30</td>
+            <td align="right">0.491</td>
+            <td align="right">0.409</td>
+            <td align="center">INT8</td>
+            <td align="right">6.659</td>
+            <td align="right">0.032</td>
+            <td align="right">53.568</td>
+        </tr>
+        <tr>
+            <td align="center" class="variant"><a href="YOLO/yolox/yolox_x/">x</a></td>
+            <td align="center">TFLite</td> <!-- Framework -->
+            <td align="center">COCO2017</td> <!-- Detections/DataSet -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">65.62</td>
+            <td align="right">0.563</td>
+            <td align="right">0.502</td>
+            <td align="center">INT8</td>
+            <td align="right">6.659</td>
+            <td align="right">0.032</td>
+            <td align="right">95.310</td>
         </tr>
     </tbody>
 </table>

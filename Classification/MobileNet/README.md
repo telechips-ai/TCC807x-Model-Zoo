@@ -1,8 +1,8 @@
 # MobileNet Benchmark on TCC807x
-The following table shows benchmark results for the MobileNetV2-1.4 model running on the **TCC807x** NPU.
+The following table shows benchmark results for the MobileNet-v2-1.4 model running on the **TCC807x** NPU.
 MobileNet is a family of lightweight and efficient convolutional neural networks optimized for image classification tasks, particularly on embedded and mobile devices.
 
-The MobileNet-v2-1.4 model is evaluated using the ILSVRC 2012 (ImageNet) validation dataset and compiled with TVM toolkit.
+The MobileNet-v2-1.4 model is evaluated using the ILSVRC 2012 (ImageNet) validation dataset and compiled with the TVM toolkit.
 Click on the model name to download a tar file containing the model binary for TCC807x.
 
 - - -
@@ -11,7 +11,7 @@ Click on the model name to download a tar file containing the model binary for T
 
 | Column                    | Description                                                                 |
 |--------------------------|-----------------------------------------------------------------------------|
-| **Model**                | Name of the image classification model    |
+| **Model**                | Name of the neural network model    |
 | **Framework**            | Deep learning framework used (e.g., PyTorch, TFLite, ONNX)                  |
 | **Dataset**              | Dataset used to benchmark model performance  |
 | **Input Size (WxHxC)**   | Input Size (Width × Height × Channels) of the input image required by the model    |
@@ -19,7 +19,7 @@ Click on the model name to download a tar file containing the model binary for T
 | **Accuracy**             | Top-1 classification accuracy on the ImageNet validation dataset (50,000 images)                    |
 | **Quantization Bit**     | Bit-depth used for quantization (e.g., INT8)                                |
 | **Compiled Model Files**   | Sizes of the compiled model components: .json, .params, and .so for execution on TCC807x                     |
-| **References**           | Link and license* information for the original repository of the model                         |
+| **References**           | Link and license** information for the original repository of the model                         |
 
 - - -
 
@@ -28,7 +28,7 @@ Click on the model name to download a tar file containing the model binary for T
         <tr>
             <th rowspan="2" colspan="2">Model</th>
             <th rowspan="2">Framework</th>
-            <th rowspan="2">DataSet</th>
+            <th rowspan="2">Dataset</th>
             <th rowspan="2">Input Size (WxHxC)</th>
             <th rowspan="2">Inference Time (ms)</th>
             <th colspan="2">Accuracy</th>
@@ -49,17 +49,17 @@ Click on the model name to download a tar file containing the model binary for T
     <tbody>
         <tr>
             <td align="center" colspan="1">MobileNet-v2</a></td>
-            <td align="center" rowspan="1" class="variant"><a href="mobilenet_v2_1.4/">1.4</a></td> <!-- Model -->
+            <td align="center" rowspan="1" class="variant"><a href="mobilenet_v2_1.4">1.4</a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">ILSVRC 2012</td> <!-- Detections/DataSet -->
             <td align="center">224x224x3</td> <!-- Input Size (WxHxC) -->
             <td align="right">1.16</td> <!-- Inference Time(msec): EVB -->
-            <td align="right">0.719</td> <!-- Evaluation Result: FP32 -->
-            <td align="right">0.712</td> <!-- Evaluation Result: INT8 -->
+            <td align="right">0.71922</td> <!-- Evaluation Result: FP32 -->
+            <td align="right">0.71244</td> <!-- Evaluation Result: INT8 -->
             <td align="center">INT8</td> <!-- Quantization Bit -->
-            <td align="right">16.36</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
-            <td align="right">0.25</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
-            <td align="right">32</td> <!-- Compiled NN Information: Network (.so) (MB) -->
+            <td align="right">1.998</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
+            <td align="right">0.031</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
+            <td align="right">3.888</td> <!-- Compiled NN Information: Network (.so) (MB) -->
             <td align="center"><a href="https://github.com/openvinotoolkit/open_model_zoo/tree/master/models/public/mobilenet-v2-1.4-224">Github<a></td> <!-- References: Link -->
             <td align="center">Apache-2.0</td>
         </tr>
@@ -71,14 +71,15 @@ Click on the model name to download a tar file containing the model binary for T
 
 ## 📤 Output Format
 
-- The model returns the index of the top-1 class with the highest confidence score among the 1,000 ImageNet classes.
+- The model's raw output consists of logit values corresponding to all 1000 ImageNet claasses.
+- These outputs can be post-processed using softmax or argmax as needed.
 
 - - -
 
-### Footnote                
-* All models in this repository are distributed exclusively in TensorFlow Lite® format.  
+### Footnote
+* All models in this repository are distributed exclusively in TensorFlow Lite® format.
 * PyTorch® and ONNX™ are not provided.
-* License\*:
+* License\**:
   - Telechips Inc. is not responsible for any issues, damages, or losses resulting from the use of code downloaded from GitHub repositories provided by Telechips.
   - The performance results of neural networks (such as, mAP or inference time) are not subject to license term and may be used freely.
   - Any output generated by software execution may or may not be subject to license terms, depending on the contract and intended use of the output.

@@ -32,15 +32,15 @@
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">15.21</td> <!-- Inference Time(msec): EVB -->
-            <td align="right">0.387</td> <!-- Evaluation Result: FP32 IoU=0.50:0.95 -->
-            <td align="right">0.345</td> <!-- Evaluation Result: INT8 IoU=0.50:0.95 -->
-            <td align="right">0.588</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
-            <td align="right">0.560</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">47.32</td> <!-- Inference Time(msec): EVB -->
+            <td align="right">0.305</td> <!-- Evaluation Result: FP32 IoU=0.50:0.95 -->
+            <td align="right">0.261</td> <!-- Evaluation Result: INT8 IoU=0.50:0.95 -->
+            <td align="right">0.436</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
+            <td align="right">0.426</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
             <td align="center">INT8</td> <!-- Quantization Bit -->
-            <td align="right">29.528</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
-            <td align="right">1.744</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
-            <td align="right">470.603</td> <!-- Compiled NN Information: Network (.so) (MB) -->
+            <td align="right">2.520</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
+            <td align="right">0.032</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
+            <td align="right">56.952</td> <!-- Compiled NN Information: Network (.so) (MB) -->
             <td align="center"><a href="https://github.com/ultralytics/yolov3">Github<a></td> <!-- References: Link -->
             <td align="center">AGPL-3.0</td>
         </tr>
@@ -49,15 +49,15 @@
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">2.50</td> <!-- Inference Time(msec): EVB -->
-            <td align="right">0.172</td> <!-- Evaluation Result: FP32 IoU=0.50:0.95 -->
-            <td align="right">0.152</td> <!-- Evaluation Result: INT8 IoU=0.50:0.95 -->
-            <td align="right">0.338</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
-            <td align="right">0.319</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">5.25</td> <!-- Inference Time(msec): EVB -->
+            <td align="right">0.136</td> <!-- Evaluation Result: FP32 IoU=0.50:0.95 -->
+            <td align="right">0.104</td> <!-- Evaluation Result: INT8 IoU=0.50:0.95 -->
+            <td align="right">0.260</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
+            <td align="right">0.215</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
             <td align="center">INT8</td> <!-- Quantization Bit -->
-            <td align="right">17.624</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
-            <td align="right">0.256</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
-            <td align="right">63.818</td> <!-- Compiled NN Information: Network (.so) (MB) -->
+            <td align="right">2.158</td> <!-- Compiled NN Information: Graph file (.json) (KB) -->
+            <td align="right">0.032</td> <!-- Compiled NN Information: weight & bias (.params) (KB) -->
+            <td align="right">7.612</td> <!-- Compiled NN Information: Network (.so) (MB) -->
             <td align="center"><a href="https://github.com/ultralytics/yolov3">Github<a></td> <!-- References: Link -->
             <td align="center">AGPL-3.0</td>
         </tr>

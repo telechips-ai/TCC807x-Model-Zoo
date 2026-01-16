@@ -33,15 +33,15 @@
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">39.39</td>
-            <td align="right">0.277</td>
-            <td align="right">0.215</td>
-            <td align="right">0.389</td>
-            <td align="right">0.342</td>
+            <td align="right">11.47</td>
+            <td align="right">0.269</td>
+            <td align="right">0.224</td>
+            <td align="right">0.382</td>
+            <td align="right">0.328</td>
             <td align="center">INT8</td>
-            <td align="right">16.348</td>
-            <td align="right">0.14</td>
-            <td align="right">5.033</td>
+            <td align="right">2.459</td>
+            <td align="right">0.032</td>
+            <td align="right">4.806</td>
             <td align="center" rowspan="4"><a href="https://github.com/meituan/YOLOv6">GitHub<a></td> <!-- References: Link -->
             <td align="center" rowspan="4">GPL-3.0</td>
         </tr>
@@ -50,45 +50,45 @@
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">60.52</td>
-            <td align="right">0.328</td>
-            <td align="right">0.246</td>
-            <td align="right">0.446</td>
-            <td align="right">0.407</td>
+            <td align="right">14.52</td>
+            <td align="right">0.322</td>
+            <td align="right">0.238</td>
+            <td align="right">0.442</td>
+            <td align="right">0.352</td>
             <td align="center">INT8</td>
-            <td align="right">16.302</td>
-            <td align="right">0.14</td>
-            <td align="right">17.468</td>
+            <td align="right">2.462</td>
+            <td align="right">0.032</td>
+            <td align="right">17.270</td>
         </tr>
         <tr>
             <td align="center" class="variant"><a href="yolov6m/">m</a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">83.51</td>
-            <td align="right">0.349</td>
-            <td align="right">0.241</td>
-            <td align="right">0.471</td>
-            <td align="right">0.437</td>
+            <td align="right">20.79</td>
+            <td align="right">0.333</td>
+            <td align="right">0.306</td>
+            <td align="right">0.451</td>
+            <td align="right">0.424</td>
             <td align="center">INT8</td>
-            <td align="right">16.56</td>
-            <td align="right">0.194</td>
-            <td align="right">32.138</td>
+            <td align="right">2.459</td>
+            <td align="right">0.032</td>
+            <td align="right">31.828</td>
         </tr>
         <tr>
             <td align="center" class="variant"><a href="yolov6l/">l</a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">1414.80</td>
-            <td align="right">0.367</td>
-            <td align="right">0.243</td>
-            <td align="right">0.488</td>
-            <td align="right">0.461</td>
+            <td align="right">29.90</td>
+            <td align="right">0.337</td>
+            <td align="right">0.313</td>
+            <td align="right">0.456</td>
+            <td align="right">0.427</td>
             <td align="center">INT8</td>
-            <td align="right">208.664</td>
-            <td align="right">2.066</td>
-            <td align="right">62.854</td>
+            <td align="right">2.458</td>
+            <td align="right">0.032</td>
+            <td align="right">58.312</td>
         </tr>
     </tbody>
 </table>
