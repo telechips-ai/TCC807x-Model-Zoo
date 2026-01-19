@@ -66,7 +66,7 @@ Click on the model name to download a tar file containing the model binary for T
             <td align="center" class="variant"><a href="YOLO/yolov3/yolov3/"> - </a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
-            <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
             <td align="right">47.32</td> <!-- Inference Time(msec): EVB -->
             <td align="right">0.436</td> <!-- Evaluation Result: FP32 IoU=0.50 -->
             <td align="right">0.426</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
@@ -274,7 +274,7 @@ Click on the model name to download a tar file containing the model binary for T
             <td align="center" class="variant"><a href="YOLO/yolox/yolox_nano/">nano</a></td>
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
-            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
             <td align="right">14.28</td>
             <td align="right">0.282</td>
             <td align="right">0.059</td>
@@ -288,7 +288,7 @@ Click on the model name to download a tar file containing the model binary for T
             <td align="center" class="variant"><a href="YOLO/yolox/yolox_tiny/">tiny</a></td>
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
-            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
             <td align="right">14.87</td>
             <td align="right">0.336</td>
             <td align="right">0.305</td>

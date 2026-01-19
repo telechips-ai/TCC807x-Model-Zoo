@@ -31,7 +31,7 @@
             <td align="center" colspan="2"><a href="yolov3/">YOLOv3</a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
-            <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
             <td align="right">47.32</td> <!-- Inference Time(msec): EVB -->
             <td align="right">0.305</td> <!-- Evaluation Result: FP32 IoU=0.50:0.95 -->
             <td align="right">0.261</td> <!-- Evaluation Result: INT8 IoU=0.50:0.95 -->

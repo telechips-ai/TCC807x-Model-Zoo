@@ -92,7 +92,7 @@ Each model name links to its dedicated page with performance metrics and deploym
         <tr>
             <td align="center" rowspan="2" class="model">YOLOv3</td> <!-- Model -->
             <td align="center" class="variant">-</td> <!-- Models: Variant -->
-            <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
             <td align="right">47.32</td> <!-- Inference Time (msec): EVB -->
             <td align="right">0.426</td>
         </tr>
@@ -187,13 +187,13 @@ Each model name links to its dedicated page with performance metrics and deploym
         <tr>
             <td align="center" rowspan="6" class="model">YOLOX</td> <!-- Models -->
             <td align="center" class="variant">nano</td> <!-- Models: Variant -->
-            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
             <td align="right">14.28</td> <!-- Inference Time (msec): EVB -->
             <td align="right">0.059</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">tiny</td> <!-- Models: Variant -->
-            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
             <td align="right">14.87</td> <!-- Inference Time (msec): EVB -->
             <td align="right">0.305</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>

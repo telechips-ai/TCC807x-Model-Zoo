@@ -32,7 +32,7 @@
             <td align="center" class="variant"><a href="yolox_nano/">nano</a></td>
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
-            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
             <td align="right">14.28</td>
             <td align="right">0.172</td>
             <td align="right">0.034</td>
@@ -49,7 +49,7 @@
             <td align="center" class="variant"><a href="yolox_tiny/">tiny</a></td>
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
-            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
             <td align="right">14.87</td>
             <td align="right">0.205</td>
             <td align="right">0.157</td>
