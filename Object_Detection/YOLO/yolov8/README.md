@@ -4,15 +4,15 @@
     <thead>
         <tr>
             <th align="center" rowspan="2" colspan="2">Model</th>
-            <th th align="center" rowspan="2">Framework</th>
-            <th th align="center" rowspan="2">Dataset</th>
-            <th th align="center" rowspan="2">Input Size (WxHxC)</th>
-            <th th align="center" rowspan="2">Inference Time (ms)</th>
-            <th th align="center" colspan="2">mAP@50:95</th>
-            <th th align="center" colspan="2">mAP@50</th>
-            <th th align="center" rowspan="2">Quantization Bit</th>
-            <th th align="center" colspan="3">Compiled Model Files</th>
-            <th th align="center" colspan="2">References</th>
+            <th align="center" rowspan="2">Framework</th>
+            <th align="center" rowspan="2">Dataset</th>
+            <th align="center" rowspan="2">Input Size (WxHxC)</th>
+            <th align="center" rowspan="2">Inference Time (ms)</th>
+            <th align="center" colspan="2">mAP@50:95</th>
+            <th align="center" colspan="2">mAP@50</th>
+            <th align="center" rowspan="2">Quantization Bit</th>
+            <th align="center" colspan="3">Compiled Model Files</th>
+            <th align="center" colspan="2">References</th>
         </tr>
         <tr>
             <th>FP32</th>
@@ -28,21 +28,21 @@
     </thead>
     <tbody>
         <tr>
-            <td align="center" rowspan="5" class="model">YOLOv8</a></td> <!-- Model -->
+            <td align="center" rowspan="5" class="model">YOLOv8</td> <!-- Model -->
             <td align="center" class="variant"><a href="yolov8n/">n</a></td>
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">18.44</td>
-            <td align="right">0.260</td>
-            <td align="right">0.240</td>
-            <td align="right">0.369</td>
-            <td align="right">0.347</td>
+            <td align="right">23.93</td>
+            <td align="right">0.326</td>
+            <td align="right">0.292</td>
+            <td align="right">0.478</td>
+            <td align="right">0.440</td>
             <td align="center">INT8</td>
-            <td align="right">1.758</td>
-            <td align="right">0.032</td>
-            <td align="right">3.577</td>
-            <td align="center" rowspan="5"><a href="https://github.com/ultralytics/ultralytics">GitHub<a></td> <!-- References: Link -->
+            <td align="right">2.346</td>
+            <td align="right">0.031</td>
+            <td align="right">3.494</td>
+            <td align="center" rowspan="5"><a href="https://github.com/ultralytics/ultralytics">GitHub</a></td> <!-- References: Link -->
             <td align="center" rowspan="5">AGPL-3.0</td>
         </tr>
         <tr>
@@ -50,60 +50,60 @@
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">21.73</td>
-            <td align="right">0.301</td>
-            <td align="right">0.280</td>
-            <td align="right">0.417</td>
-            <td align="right">0.391</td>
+            <td align="right">34.01</td>
+            <td align="right">0.392</td>
+            <td align="right">0.374</td>
+            <td align="right">0.558</td>
+            <td align="right">0.541</td>
             <td align="center">INT8</td>
-            <td align="right">1.813</td>
-            <td align="right">0.032</td>
-            <td align="right">8.321</td>
+            <td align="right">2.349</td>
+            <td align="right">0.031</td>
+            <td align="right">11.142</td>
         </tr>
         <tr>
             <td align="center" class="variant"><a href="yolov8m/">m</a></td>
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">28.00</td>
-            <td align="right">0.340</td>
-            <td align="right">0.322</td>
-            <td align="right">0.455</td>
-            <td align="right">0.435</td>
+            <td align="right">52.57</td>
+            <td align="right">0.437</td>
+            <td align="right">0.412</td>
+            <td align="right">0.607</td>
+            <td align="right">0.584</td>
             <td align="center">INT8</td>
-            <td align="right">1.813</td>
-            <td align="right">0.032</td>
-            <td align="right">18.237</td>
+            <td align="right">2.347</td>
+            <td align="right">0.031</td>
+            <td align="right">25.029</td>
         </tr>
         <tr>
             <td align="center" class="variant"><a href="yolov8l/">l</a></td>
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">36.92</td>
-            <td align="right">0.363</td>
-            <td align="right">0.338</td>
-            <td align="right">0.478</td>
-            <td align="right">0.450</td>
+            <td align="right">78.75</td>
+            <td align="right">0.462</td>
+            <td align="right">0.429</td>
+            <td align="right">0.632</td>
+            <td align="right">0.601</td>
             <td align="center">INT8</td>
-            <td align="right">1.812</td>
-            <td align="right">0.032</td>
-            <td align="right">29.775</td>
+            <td align="right">2.349</td>
+            <td align="right">0.031</td>
+            <td align="right">41.818</td>
         </tr>
         <tr>
             <td align="center" class="variant"><a href="yolov8x/">x</a></td>
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">46.21</td>
-            <td align="right">0.365</td>
-            <td align="right">0.345</td>
-            <td align="right">0.481</td>
-            <td align="right">0.456</td>
+            <td align="right">102.03</td>
+            <td align="right">0.471</td>
+            <td align="right">0.437</td>
+            <td align="right">0.641</td>
+            <td align="right">0.610</td>
             <td align="center">INT8</td>
-            <td align="right">1.813</td>
-            <td align="right">0.032</td>
-            <td align="right">45.213</td>
+            <td align="right">2.348</td>
+            <td align="right">0.031</td>
+            <td align="right">64.134</td>
         </tr>
     </tbody>
 </table>

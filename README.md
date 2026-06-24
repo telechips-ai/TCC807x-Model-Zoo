@@ -6,13 +6,13 @@
 
 This repository provides a collection of neural network models optimized for Telechips Cockpit (TCC807x).
 
-The models are ready to run on evaluation boards and include benchmark results that show how the TCC807x performs.
+The models are ready to run on the TCC807x Evaluation Board (EVB) and include benchmark results that show how the TCC807x performs.
 
 ---
 
 ## **1. Chip Description**
 The TCC807x features an integrated Neural Processing Unit (NPU).
-With support for up to 8 TOPS, the TCC807x redefines in-car innovation with scalable, integrated solutions tailored for both infotainment and advanced driver assistance systems (ADAS).
+With support for up to 8 TOPS, the TCC807x redefines in-car innovation with scalable solutions tailored for both infotainment and advanced driver assistance systems (ADAS).
 
 ### TCC807x (D5)
 - **Performance:** 8 TOPS
@@ -22,15 +22,15 @@ With support for up to 8 TOPS, the TCC807x redefines in-car innovation with scal
   - Driver Monitoring System (DMS)
   - Deep learning inference
 
-With an integrated NPU, the TCC807x delivers real-time neural network inference with high efficiency and scalable performance for automotive applications.
+With its NPU, the TCC807x delivers real-time neural network inference with high efficiency and scalable performance for automotive applications.
 
 ---
 
 ## **2. Overview of Model Zoo**
-The following table summarizes the image classification and object detection models supported on TCC807x.
+The following table summarizes the image classification and object detection models supported on the TCC807x.
 Each model name links to its dedicated page with performance metrics and deployment instructions.
 
-**Note:** The models covered in this document are based on original network architectures or have been minimally modified for compatibility with TCC807x execution. The results shown are not guaranteed for production use, and you are responsible for any further optimization.
+**Note:** The models covered in this document are based on original network architectures or have been minimally modified for compatibility with the TCC807x. The results shown are not guaranteed for production use, and you are responsible for any further optimization.
 
 ### [Classification](Classification/README.md)
 
@@ -47,29 +47,29 @@ Each model name links to its dedicated page with performance metrics and deploym
         <tr>
             <td align="center" colspan="2">EfficientNet-Lite0</td> <!-- Model -->
             <td align="center">224x224x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">1.30</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.723</td> <!-- Accuracy -->
+            <td align="right">1.75</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.749</td> <!-- Accuracy -->
         </tr>
         <tr>
-            <td align="center" colspan="2">MobileNet-v2-1.4</td> <!-- Model -->
+            <td align="center" colspan="2">MobileNet-v2-1.0</td> <!-- Model -->
             <td align="center">224x224x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">1.14</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.699</td> <!-- Accuracy -->
+            <td align="right">1.52</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.712</td> <!-- Accuracy -->
         </tr>
         <tr>
             <td align="center" colspan="2">ResNet50-v2</td> <!-- Model -->
             <td align="center">224x224x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">5.54</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.712</td> <!-- Accuracy -->
+            <td align="right">5.02</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.704</td> <!-- Accuracy -->
         </tr>
         <tr>
             <td align="center" colspan="2">LeNet5</td> <!-- Model -->
-            <td align="center">224x224x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">0.19</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.970</td> <!-- Accuracy -->
+            <td align="center">32x32x1</td> <!-- Input Size (WxHxC) -->
+            <td align="right">0.25</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.985</td> <!-- Accuracy -->
         </tr>
     </tbody>
-<table>
+</table>
 
 ### [Object Detection](Object_Detection/README.md)
 
@@ -86,148 +86,179 @@ Each model name links to its dedicated page with performance metrics and deploym
         <tr>
             <td align="center" colspan="2">SSDlite-MobileNet-v1</td> <!-- Model -->
             <td align="center">300x300x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">16.58</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.341</td>
+            <td align="right">4.24</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.386</td>
         </tr>
         <tr>
             <td align="center" rowspan="2" class="model">YOLOv3</td> <!-- Model -->
-            <td align="center" class="variant">-</td> <!-- Models: Variant -->
-            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">47.32</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.426</td>
-        </tr>
-        <tr>
             <td align="center" class="variant">tiny</td> <!-- Model -->
             <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">5.25</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.215</td>
+            <td align="right">8.11</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.305</td>
+        </tr>
+        <tr>
+            <td align="center" class="variant">-</td> <!-- Models: Variant -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">96.94</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.558</td>
         </tr>
         <tr>
             <td align="center" colspan="2">YOLOv4</td> <!-- Model -->
             <td align="center">608x608x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">47.51</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.446</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">52.17</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.592</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+        </tr>
+        <tr>
+            <td align="center" rowspan="5" class="model">YOLOv5</td> <!-- Models -->
+            <td align="center" class="variant">n</td> <!-- Models: Variant -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">30.99</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.251</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+        </tr>
+        <tr>
+            <td align="center" class="variant">s</td> <!-- Models: Variant -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">39.28</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.506</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+        </tr>
+        <tr>
+            <td align="center" class="variant">m</td> <!-- Models: Variant -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">56.70</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.572</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+        </tr>
+        <tr>
+            <td align="center" class="variant">l</td> <!-- Models: Variant -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">81.37</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.607</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+        </tr>
+        <tr>
+            <td align="center" class="variant">x</td> <!-- Models: Variant -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">115.67</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.620</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" rowspan="4" class="model">YOLOv6</td> <!-- Models -->
             <td align="center" class="variant">n</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">11.47</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.328</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">12.40</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.346</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">s</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">14.52</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.352</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">17.36</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.409</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">m</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">20.79</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.424</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">25.53</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.535</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">l</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">29.90</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.427</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">73.49</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.586</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" rowspan="2" class="model">YOLOv7</td> <!-- Models -->
-            <td align="center" class="variant">-</td> <!-- Models: Variant -->
-            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">41.39</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.459</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
-        </tr>
-        <tr>
             <td align="center" class="variant">tiny</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">27.62</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.381</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">27.24</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.489</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+        </tr>
+        <tr>
+            <td align="center" class="variant">-</td> <!-- Models: Variant -->
+            <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
+            <td align="right">83.11</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.616</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" rowspan="5" class="model">YOLOv8</td> <!-- Models -->
             <td align="center" class="variant">n</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">18.44</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.347</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">23.93</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.440</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">s</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">21.73</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.391</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">34.01</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.541</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">m</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">28.00</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.435</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">52.57</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.584</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">l</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">36.92</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.450</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">78.75</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.601</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">x</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">46.21</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.456</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">102.03</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.610</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" rowspan="1" class="model">YOLOv9</td> <!-- Models -->
             <td align="center" class="variant">s</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">32.44</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.328</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">40.84</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.345</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" rowspan="6" class="model">YOLOX</td> <!-- Models -->
             <td align="center" class="variant">nano</td> <!-- Models: Variant -->
             <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">14.28</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.059</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">11.29</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.038</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">tiny</td> <!-- Models: Variant -->
             <td align="center">416x416x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">14.87</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.305</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">13.11</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.362</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">s</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">33.83</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.281</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">30.97</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.447</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">m</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">40.83</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.257</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">52.01</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.507</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">l</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">51.30</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.409</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">82.25</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.527</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
         <tr>
             <td align="center" class="variant">x</td> <!-- Models: Variant -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">65.62</td> <!-- Inference Time (msec): EVB -->
-            <td align="right">0.502</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
+            <td align="right">123.34</td> <!-- Inference Time (msec): EVB -->
+            <td align="right">0.556</td> <!-- Evaluation Result: INT8 IoU=0.50 -->
         </tr>
     </tbody>
-<table>
+</table>
 
 ---
 
 ## **3. Getting Started**
-Follow these steps to run a model provided by Telechips Model Zoo on the TCC807x Evaluation Board (EVB).
+Follow these steps to run a model provided by Telechips Model Zoo on the TCC807x Evaluation Board.
 
 ### 1. Clone the repository:
 <pre> <code>
@@ -235,43 +266,49 @@ git clone git@github.com:telechips-ai/TCC807x-Model-Zoo.git
 </code> </pre>
 
 ### 2. Copy the desired model to the EVB:
-Copy the entire model folder (ssdlite_mobilenet_v1) to the TCC807x EVB.
-Each folder contains the necessary output files (.so, .json, and .param).
+Copy the model folder (e.g., ssdlite_mobilenet_v1) to the TCC807x EVB.
+Each folder contains a `.tar` archive (e.g., ssd_mobilenet_v1_int8.tar) of the output files (.so, .json, and .params).
 <pre> <code>
 scp -r [network_output_folder] root@192.168.0.100:/path/to/target/
 </code> </pre>
 Replace [network_output_folder] with the actual folder (e.g., ssdlite_mobilenet_v1/).
+Then run:
+<pre> <code>
+scp -r ssdlite_mobilenet_v1/ root@192.168.0.100:/home/root/
+</code> </pre>
+
+### 3. Extract the model archive:
+Extract the `.tar` archive to obtain the output files (.so, .json, and .params) required by rtvm.
+<pre> <code>
+tar xf [model_name]_int8.tar
+</code> </pre>
 
 ### ***Example: TCC807x - ssdlite_mobilenet_v1 Folder Structure***
 <pre> <code>
 ssdlite_mobilenet_v1/
 ├── mod.so        # Compiled model
 ├── mod.json      # Model graph
-└── mod.param     # Binary file of Quantized weight and bias
-</code> </pre>
-Then run:
-<pre> <code>
-scp -r ssdlite_mobilenet_v1/ root@192.168.0.100:/home/root/
+└── mod.params    # Quantized weights and biases (binary)
 </code> </pre>
 
-### 3. Run the model using rtvm:
+### 4. Run the model using rtvm:
 <pre> <code>
 rtvm --model=[network_output_folder_path] --device=cpu --dump-meta --profile --run-count=10
 </code> </pre>
 
 ---
 
-## 4. **Requirement**
+## **4. Requirements**
 
-* ethos-n-driver-stack: 25.03
-* TVM: 0.18.0
+* ethos-n-driver-stack: 25.03 (modified for TCC807x)
+* TVM: 0.18.0 (modified for TCC807x)
     * Python: 3.10
     * Clang/LLVM: clang+llvm-11.0.0-x86_64-linux-gnu-ubuntu-20.04
     * GCC for Arm: gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu
 
 ---
-## 5. **License**
-* Model: For each model’s license, please refer to the License block.
+## **5. License**
+* Model: For each model's license, refer to the License section.
 
 * Dataset
 
@@ -279,3 +316,4 @@ rtvm --model=[network_output_folder_path] --device=cpu --dump-meta --profile --r
 | -------------- | ---------------- | -------------------------------------- | ------------------------------------------------------------------------ |
 | **COCO2017**   | CC-BY-4.0        | Creative Commons Attribution 4.0 International | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  |
 | **ILSVRC2012** | ImageNet Terms of Use | ImageNet Terms of Use                     | [ImageNet](https://www.image-net.org/)                     |
+| **MNIST**      | CC-BY-SA-3.0     | Modified National Institute of Standards and Technology database | [MNIST](http://yann.lecun.com/exdb/mnist/)        |

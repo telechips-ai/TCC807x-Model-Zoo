@@ -4,15 +4,15 @@
     <thead>
         <tr>
             <th align="center" rowspan="2" colspan="2">Model</th>
-            <th th align="center" rowspan="2">Framework</th>
-            <th th align="center" rowspan="2">Dataset</th>
-            <th th align="center" rowspan="2">Input Size (WxHxC)</th>
-            <th th align="center" rowspan="2">Inference Time (ms)</th>
-            <th th align="center" colspan="2">mAP@50:95</th>
-            <th th align="center" colspan="2">mAP@50</th>
-            <th th align="center" rowspan="2">Quantization Bit</th>
-            <th th align="center" colspan="3">Compiled Model Files</th>
-            <th th align="center" colspan="2">References</th>
+            <th align="center" rowspan="2">Framework</th>
+            <th align="center" rowspan="2">Dataset</th>
+            <th align="center" rowspan="2">Input Size (WxHxC)</th>
+            <th align="center" rowspan="2">Inference Time (ms)</th>
+            <th align="center" colspan="2">mAP@50:95</th>
+            <th align="center" colspan="2">mAP@50</th>
+            <th align="center" rowspan="2">Quantization Bit</th>
+            <th align="center" colspan="3">Compiled Model Files</th>
+            <th align="center" colspan="2">References</th>
         </tr>
         <tr>
             <th>FP32</th>
@@ -28,21 +28,21 @@
     </thead>
     <tbody>
         <tr>
-            <td align="center" rowspan="4" class="model">YOLOv6</a></td> <!-- Model -->
+            <td align="center" rowspan="4" class="model">YOLOv6</td> <!-- Model -->
             <td align="center" class="variant"><a href="yolov6n/">n</a></td> <!-- Models: Variant -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">11.47</td>
-            <td align="right">0.269</td>
-            <td align="right">0.224</td>
-            <td align="right">0.382</td>
+            <td align="right">12.40</td>
             <td align="right">0.328</td>
+            <td align="right">0.212</td>
+            <td align="right">0.482</td>
+            <td align="right">0.346</td>
             <td align="center">INT8</td>
-            <td align="right">2.459</td>
-            <td align="right">0.032</td>
-            <td align="right">4.806</td>
-            <td align="center" rowspan="4"><a href="https://github.com/meituan/YOLOv6">GitHub<a></td> <!-- References: Link -->
+            <td align="right">2.351</td>
+            <td align="right">0.031</td>
+            <td align="right">3.076</td>
+            <td align="center" rowspan="4"><a href="https://github.com/meituan/YOLOv6">GitHub</a></td> <!-- References: Link -->
             <td align="center" rowspan="4">GPL-3.0</td>
         </tr>
         <tr>
@@ -50,45 +50,45 @@
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">14.52</td>
-            <td align="right">0.322</td>
-            <td align="right">0.238</td>
-            <td align="right">0.442</td>
-            <td align="right">0.352</td>
+            <td align="right">17.36</td>
+            <td align="right">0.394</td>
+            <td align="right">0.257</td>
+            <td align="right">0.562</td>
+            <td align="right">0.409</td>
             <td align="center">INT8</td>
-            <td align="right">2.462</td>
-            <td align="right">0.032</td>
-            <td align="right">17.270</td>
+            <td align="right">2.352</td>
+            <td align="right">0.031</td>
+            <td align="right">10.103</td>
         </tr>
         <tr>
             <td align="center" class="variant"><a href="yolov6m/">m</a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">20.79</td>
-            <td align="right">0.333</td>
-            <td align="right">0.306</td>
-            <td align="right">0.451</td>
-            <td align="right">0.424</td>
+            <td align="right">25.53</td>
+            <td align="right">0.410</td>
+            <td align="right">0.352</td>
+            <td align="right">0.581</td>
+            <td align="right">0.535</td>
             <td align="center">INT8</td>
-            <td align="right">2.459</td>
-            <td align="right">0.032</td>
-            <td align="right">31.828</td>
+            <td align="right">2.351</td>
+            <td align="right">0.031</td>
+            <td align="right">18.115</td>
         </tr>
         <tr>
             <td align="center" class="variant"><a href="yolov6l/">l</a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">640x640x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">29.90</td>
-            <td align="right">0.337</td>
-            <td align="right">0.313</td>
-            <td align="right">0.456</td>
-            <td align="right">0.427</td>
+            <td align="right">73.49</td>
+            <td align="right">0.448</td>
+            <td align="right">0.374</td>
+            <td align="right">0.625</td>
+            <td align="right">0.586</td>
             <td align="center">INT8</td>
-            <td align="right">2.458</td>
-            <td align="right">0.032</td>
-            <td align="right">58.312</td>
+            <td align="right">2.352</td>
+            <td align="right">0.031</td>
+            <td align="right">41.388</td>
         </tr>
     </tbody>
 </table>

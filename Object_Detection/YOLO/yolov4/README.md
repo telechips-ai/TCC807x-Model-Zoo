@@ -4,15 +4,15 @@
     <thead>
         <tr>
             <th align="center" rowspan="2" colspan="1">Model</th>
-            <th th align="center" rowspan="2">Framework</th>
-            <th th align="center" rowspan="2">Dataset</th>
-            <th th align="center" rowspan="2">Input Size (WxHxC)</th>
-            <th th align="center" rowspan="2">Inference Time (ms)</th>
-            <th th align="center" colspan="2">mAP@50:95</th>
-            <th th align="center" colspan="2">mAP@50</th>
-            <th th align="center" rowspan="2">Quantization Bit</th>
-            <th th align="center" colspan="3">Compiled Model Files</th>
-            <th th align="center" colspan="2">References</th>
+            <th align="center" rowspan="2">Framework</th>
+            <th align="center" rowspan="2">Dataset</th>
+            <th align="center" rowspan="2">Input Size (WxHxC)</th>
+            <th align="center" rowspan="2">Inference Time (ms)</th>
+            <th align="center" colspan="2">mAP@50:95</th>
+            <th align="center" colspan="2">mAP@50</th>
+            <th align="center" rowspan="2">Quantization Bit</th>
+            <th align="center" colspan="3">Compiled Model Files</th>
+            <th align="center" colspan="2">References</th>
         </tr>
         <tr>
             <th>FP32</th>
@@ -28,21 +28,21 @@
     </thead>
     <tbody>
         <tr>
-            <td align="center" rowspan="1"><a href="yolov4/">YOLOv4</td> <!-- Model -->
+            <td align="center" rowspan="1"><a href="yolov4/">YOLOv4</a></td> <!-- Model -->
             <td align="center">TFLite</td> <!-- Framework -->
             <td align="center">COCO2017</td> <!-- Detections/DataSet -->
             <td align="center">608x608x3</td> <!-- Input Size (WxHxC) -->
-            <td align="right">47.51</td>
-            <td align="right">0.327</td>
-            <td align="right">0.259</td>
-            <td align="right">0.476</td>
-            <td align="right">0.446</td>
+            <td align="right">52.17</td>
+            <td align="right">0.400</td>
+            <td align="right">0.329</td>
+            <td align="right">0.609</td>
+            <td align="right">0.592</td>
             <td align="center">INT8</td>
-            <td align="right">2.435</td>
-            <td align="right">0.032</td>
-            <td align="right">63.506</td>
-            <td align="center"><a href="https://github.com/AlexeyAB/darknet">Github<a></td> <!-- References: Link -->
-            <td align="center">GPL-3.0</td>
+            <td align="right">2.378</td>
+            <td align="right">0.031</td>
+            <td align="right">61.595</td>
+            <td align="center"><a href="https://github.com/AlexeyAB/darknet">GitHub</a></td> <!-- References: Link -->
+            <td align="center">Public Domain</td>
         </tr>
     </tbody>
 </table>
